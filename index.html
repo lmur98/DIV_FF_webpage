@@ -35,7 +35,7 @@
         <div class="slider-container">
             <button id="prevBtn">&#9665;</button>
             <button id="nextBtn">&#9655;</button>
-        </div>
+        </div>MIH 
         
     </section>
     
@@ -54,13 +54,13 @@
     <section id="model"> 
         <h2>Model architecture</h2>
         <p>Overview of DIV-FF. Our three-stream architecture field predicts the color \( c \), the density \( \sigma \), the material aleatoric uncertainty \( \beta \),
-            the image-language features \( \phi \) and the video-language features \psi along a ray \( r \) with direction \( d \) given the camera viewpoint g and a frame
-            specific code z. We first extract SAM masks and bounding boxes from the image, that we leverage to obtain a unique CLIP descriptor ϕGT
-            in all the pixels within the respective mask. We supervise the video-language feature field with local patch features ψ GT (Vp ) and a global
-            video embedding ψ GT (V ) assigned only to pixels in the interaction hotspot MIH , computed with a pre-trained hand-object detector.
+            the image-language features \( \phi \) and the video-language features \( \psi \) along a ray \( r \) with direction \( d \) given the camera viewpoint \( g \) and a frame
+            specific code \( z \). We first extract SAM masks and bounding boxes from the image, that we leverage to obtain a unique CLIP descriptor \( \psi (I^{GT}) \)
+            in all the pixels within the respective mask. We supervise the video-language feature field with local patch features and a global
+            video embedding assigned only to pixels in the interaction hotspot, computed with a pre-trained hand-object detector.
         </p>
         <div class="image-container">
-            <img src="images/aff_qualit.png" alt="Qualitative results" class="responsive-image">
+            <img src="images/model.png" alt="Model" class="responsive-image">
         </div>
     </section>
     
