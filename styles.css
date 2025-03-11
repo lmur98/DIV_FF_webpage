@@ -13,7 +13,7 @@ header {
     padding: 60px 20px;
 }
 
-.main-title {
+h1 {
     font-size: 10rem;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;

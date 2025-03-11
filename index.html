@@ -67,10 +67,21 @@
     <section id="results">
         <h2>Affordance segmentation</h2>
         <p>DIV-FF distills Ego-Video features for enabling affordance segmentation in egocentric videos.
-           Compared with using CLIP features, DIV-FF captures complex interactions
+           While image-language features (CLIP) perform well when actions are explicitly linked to objects, such as
+           “cut the onion” or “add ingredients to the mixture”, our distilled video-language features accurately identifies the action's interaction hotspot.
         </p>
         <div class="image-container">
             <img src="images/aff_qualit.png" alt="Qualitative results" class="responsive-image">
+        </div>
+    </section>
+
+    <section id="results2">
+        <h2>Dynamic Object segmentation</h2>
+        <p>DIV-FF also shows consistent Dynamic Object Segmentation along different time-steps in novel views: The dynamic and actor streams contain
+            respective frame-specific codes \( z^f_t \) and \( z^a_t \). This time encoding is also propagated to the semantic feature field, obtaining consistent segmentations despite the continuous movement of the “spatula” and “blue cutting board”
+        </p>
+        <div class="image-container">
+            <img src="images/dyn.png" alt="Dyn Qualitative results" class="responsive-image">
         </div>
     </section>
     
