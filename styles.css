@@ -55,6 +55,7 @@ a:hover {
 .slider-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -75,8 +76,16 @@ a:hover {
     color: #ffffff;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 video {
     width: 1140px;
+    height: 315px;
     max-width: 100%;
     border-radius: 8px;
 }
