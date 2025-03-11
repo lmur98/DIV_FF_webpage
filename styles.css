@@ -16,23 +16,26 @@ header {
 .main-title {
     font-size: 10rem;
     font-weight: 700;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #222222;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+
 .subtitle {
     font-size: 1.8rem;
     font-weight: 500;
-    color: #555555;
+    color: #2f2f2f;
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #222222;
+    color: #595959;
     text-align: center;
+    display: block;
+    width: 100%;
 }
 
 p {
