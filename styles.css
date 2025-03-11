@@ -14,13 +14,15 @@ header {
 }
 
 h1 {
-    font-size: 10rem;
-    font-weight: 700;
+    font-size: 20rem; /* Ahora es aún más grande */
+    font-weight: 900;
     font-family: 'Poppins', sans-serif;
     color: #222222;
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.1;
 }
-
 
 .subtitle {
     font-size: 1.8rem;
