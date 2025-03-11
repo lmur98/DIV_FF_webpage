@@ -1,43 +1,55 @@
 body {
-    background-color: #0d0d0d;
-    color: #f0f0f0;
+    background-color: #ffffff;
+    color: #333333;
     font-family: 'Inter', sans-serif;
-    text-align: center;
+    text-align: justify;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: transparent;
-    padding: 40px 0;
-    font-size: 1.5rem;
-    font-weight: 600;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-h1 {
-    font-size: 3rem;
+.main-title {
+    font-size: 4rem;
     font-weight: 700;
+    color: #222222;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #555555;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 20px;
+    color: #222222;
 }
 
 section {
     max-width: 1200px;
     margin: 60px auto;
     padding: 40px;
-    background: #1a1a1a;
+    background: #f8f8f8;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 a {
-    color: #ffcc00;
+    color: #007bff;
     text-decoration: none;
     font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
 }
 
 .slider-container {
@@ -49,8 +61,8 @@ a {
 
 .slider-container button {
     background: none;
-    border: 2px solid #ffcc00;
-    color: #ffcc00;
+    border: 2px solid #007bff;
+    color: #007bff;
     font-size: 2rem;
     padding: 10px 20px;
     cursor: pointer;
@@ -59,8 +71,8 @@ a {
 }
 
 .slider-container button:hover {
-    background: #ffcc00;
-    color: #0d0d0d;
+    background: #007bff;
+    color: #ffffff;
 }
 
 video {
@@ -72,5 +84,6 @@ video {
 footer {
     padding: 20px;
     font-size: 1rem;
-    color: #888;
+    text-align: center;
+    color: #666666;
 }
