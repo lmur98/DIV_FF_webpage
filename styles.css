@@ -14,7 +14,7 @@ header {
 }
 
 h1 {
-    font-size: 20rem; /* Ahora es aún más grande */
+    font-size: 200rem; /* Ahora es aún más grande */
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
     color: #222222;
@@ -43,6 +43,7 @@ h2 {
 p {
     font-size: 1.5rem; /* Aumenta el tamaño del texto en los párrafos */
     line-height: 1.6;
+    text-align: center;
 }
 
 section {
