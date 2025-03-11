@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIV-FF - CVPR 2025</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>DIV-FF: Dynamic Image-Video Feature Fields For Environment Understanding in Egocentric Videos</h1>
+        <h1>DIV-FF</h1>
         <p>Accepted at CVPR 2025</p>
     </header>
+
+    <section id="video-slider">
+        <h2>Demo</h2>
+        <div class="slider-container">
+            <button id="prevBtn">&#9665;</button>
+            <video id="videoDisplay" width="1140" height="315" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="nextBtn">&#9655;</button>
+        </div>
+    </section>
     
     <section id="abstract">
         <h2>Abstract</h2>
@@ -47,5 +60,23 @@
     <footer>
         <p>&copy; 2025 Your Name | Hosted on GitHub Pages</p>
     </footer>
+
+    <script>
+        const videos = ["videos/P03_04.mp4", "videos/P04_01.mp4", "videos/P13_03.mp4"]; // Add your MP4 files here
+        let currentIndex = 0;
+        const videoDisplay = document.getElementById("videoDisplay");
+        
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + videos.length) % videos.length;
+            videoDisplay.src = videos[currentIndex];
+            videoDisplay.play();
+        });
+        
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % videos.length;
+            videoDisplay.src = videos[currentIndex];
+            videoDisplay.play();
+        });
+    </script>
 </body>
 </html>
