@@ -6,18 +6,26 @@
     <title>DIV-FF - CVPR 2025</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" async
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
 </head>
 <body>
     <header>
-        <h1>DIV-FF</h1>
+        <h1>🚀 DIV-FF 🚀 </h1>
         <h2>Dynamic Image-Video Feature Fields
             For Environment Understanding in Egocentric Videos
         </h2>
-        <p>Accepted at CVPR 2025</p>
+        <h2>✨✨ Accepted at CVPR 2025 ✨✨</h2>
     </header>
 
     <section id="video-slider">
         <h2>Visualize our results!</h2>
+        <p>Click the button to change the scene. DIV-FF renders objects and affordances in egocentric videos.</p>
         <div class="video-container">
             <video id="videoDisplay" controls>
                 <source src="video1.mp4" type="video/mp4">
@@ -42,11 +50,28 @@
         </p>
         <a href="https://arxiv.org/abs/example" target="_blank">Read the Paper</a>
     </section>
+
+    <section id="model"> 
+        <h2>Model architecture</h2>
+        <p>Overview of DIV-FF. Our three-stream architecture field predicts the color \( c \), the density \( \sigma \), the material aleatoric uncertainty \( \beta \),
+            the image-language features \( \phi \) and the video-language features \psi along a ray \( r \) with direction \( d \) given the camera viewpoint g and a frame
+            specific code z. We first extract SAM masks and bounding boxes from the image, that we leverage to obtain a unique CLIP descriptor ϕGT
+            in all the pixels within the respective mask. We supervise the video-language feature field with local patch features ψ GT (Vp ) and a global
+            video embedding ψ GT (V ) assigned only to pixels in the interaction hotspot MIH , computed with a pre-trained hand-object detector.
+        </p>
+        <div class="image-container">
+            <img src="images/aff_qualit.png" alt="Qualitative results" class="responsive-image">
+        </div>
+    </section>
     
-    <section id="demo">
-        <h2>Demo</h2>
-        <p>Interactive demo or video.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+    <section id="results">
+        <h2>Affordance segmentation</h2>
+        <p>DIV-FF distills Ego-Video features for enabling affordance segmentation in egocentric videos.
+           Compared with using CLIP features, DIV-FF captures complex interactions
+        </p>
+        <div class="image-container">
+            <img src="images/aff_qualit.png" alt="Qualitative results" class="responsive-image">
+        </div>
     </section>
     
     <section id="code">
@@ -60,7 +85,9 @@
     
     <section id="contact">
         <h2>Contact</h2>
-        <p>For questions, reach out at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>For questions, reach out at: <a href="mailto:lmur@unizar.es">e-mail</a> 
+           or chek my  <a href="https://sites.google.com/unizar.es/lorenzo-mur-labadia/inicio">personal web-page</a>
+        </p>
     </section>
     
     <footer>
