@@ -14,8 +14,8 @@ header {
 }
 
 h1 {
-    font-size: 10rem; /* Ahora es aún más grande */
-    font-weight: 800;
+    font-size: 5rem; /* Ahora es aún más grande */
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
     color: #222222;
     text-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 20px;
     color: #595959;
